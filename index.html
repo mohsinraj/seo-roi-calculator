@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guest Post SEO ROI Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📈 Guest Post SEO ROI Calculator</h1>
+    <form id="roiForm">
+      <label>Guest Post Cost ($): <input type="number" id="cost" required></label>
+      <label>Estimated Monthly Traffic from Backlink: <input type="number" id="traffic" required></label>
+      <label>Conversion Rate (%): <input type="number" id="conversion" step="0.1" required></label>
+      <label>Profit per Conversion ($): <input type="number" id="profit" required></label>
+      <button type="submit">Calculate ROI</button>
+    </form>
+
+    <div id="result" class="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
