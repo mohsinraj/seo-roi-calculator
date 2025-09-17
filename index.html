@@ -2,29 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Guest Post / Niche Edits SEO ROI Calculator</title>
+  <title>Guest Post SEO ROI Calculator</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>Niche Edit Backlinks SEO ROI Calculator</h1>
-      <p>for ecom websites owners</p>
-    <form id="roiForm">
-      <label>Guest Post Cost ($): <input type="number" id="cost" required></label>
-      <label>Estimated Monthly Traffic from Backlink: <input type="number" id="traffic" required></label>
-      <label>Conversion Rate (%): <input type="number" id="conversion" step="0.1" required></label>
-      <label>Profit per Conversion ($): <input type="number" id="profit" required></label>
-      <button type="submit">Calculate ROI</button>
+    <h1>📈 Guest Post SEO ROI Calculator</h1>
+    <p class="subtitle">Estimate the return on investment from your backlink placements</p>
+
+    <form id="roiForm" class="card">
+      <div class="form-group">
+        <label for="cost">Guest Post Cost ($)</label>
+        <input type="number" id="cost" required>
+      </div>
+      <div class="form-group">
+        <label for="traffic">Estimated Monthly Traffic from Backlink</label>
+        <input type="number" id="traffic" required>
+      </div>
+      <div class="form-group">
+        <label for="conversion">Conversion Rate (%)</label>
+        <input type="number" id="conversion" step="0.1" required>
+      </div>
+      <div class="form-group">
+        <label for="profit">Profit per Conversion ($)</label>
+        <input type="number" id="profit" required>
+      </div>
+      <button type="submit" class="btn">💡 Calculate ROI</button>
     </form>
 
-    <h2>Resources you need to check</h2>
-    <li>
-      <ul><a href="https://t-ranks.com/t-post/">Buy Guest Post Backlink</a></ul>
-      <ul><a href="https://t-ranks.com/buy-pbn-links/">Get PBNs Backlinks</a></ul>
-    </li>
+    <div id="result" class="result card hidden"></div>
 
-    <div id="result" class="result"></div>
+    <h2 class="resources-title">🔗 Useful Resources</h2>
+    <div class="resources">
+      <a href="https://t-ranks.com/t-post/" target="_blank" class="resource-btn">Buy Guest Post Backlink</a>
+      <a href="https://t-ranks.com/buy-pbn-links/" target="_blank" class="resource-btn">Get PBNs Backlinks</a>
+    </div>
   </div>
+
+  <footer>
+    <p>Made with ❤️ for SEO professionals</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
